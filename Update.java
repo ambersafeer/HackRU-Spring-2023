@@ -1,8 +1,7 @@
 import java.io.*;
+
 public class Update{
-  
-}
-public static ArrayList<Train> update(ArrayList<Train> list, String waitTime){
+  public static ArrayList<Train> update(ArrayList<Train> list, String waitTime){
   StdIn.setFile(waitTime);
   int arrivalTime = 0;
   int departureTime = 0;
@@ -31,5 +30,5 @@ public static ArrayList<Train> update(ArrayList<Train> list, String waitTime){
       choochoo.getDepartureTime = departureTime;
       list.set(i, choochoo);
     }
-  }
+  }  
 }
