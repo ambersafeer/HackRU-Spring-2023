@@ -24,7 +24,7 @@ class Main {
         int sec2 = min2 / 60;
 
         float shapeDistTraveled = x.getShapeDistTraveled();
-        myWriter.write(x.getTripId() + "," + hr + ":" + min ":" + sec + "," + hr2 + ":" + min2 ":" + sec2 + "," + x.getStopId() + "," + x.getStopSequence() + "," + x.getPickupType() + "," + x.getDropOffType() + "," + x.getShapeDistTraveled());
+        myWriter.write(x.getTripId() + " " + hr + ":" + min + " " + sec + "," + hr2 + " " + min2 + " " + sec2 + " " + x.getStopId() + " " + x.getStopSequence() + " " + x.getPickupType() + " " + x.getDropOffType() + " " + x.getShapeDistTraveled());
         myWriter.close();
       }
       System.out.println("Successfully wrote to the file.");
